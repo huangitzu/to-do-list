@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+i{
+  pointer-events: none;
+}
+
+body {
+  background: white;
+}
+
+header {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(249, 171, 83, 0.5);
+
+  h1 {
+    color: rgb(3, 126, 5);
+    font-size: 3rem;
+  }
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  button,
+  input {
+    padding: 0.25rem 0.5rem;
+    font-size: 1.75rem;
+    margin: 0.1rem;
+  }
+
+  input[type="number"] {
+    width: auto;
+    text-align: center;
+  }
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-inner-spin-button,
+  input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  /* Firefox */
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+  button {
+    cursor: pointer;
+    background-color: rgba(158, 162, 71, 0.5);
+    color: rgb(4, 115, 47);
+  }
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  div.todo {
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    margin: 0.2rem 0;
+    transition: all 0.1s ease;
+
+    p {
+      padding: 0.25rem 0.5rem;
+      font-size: 1.75rem;
+      background-color: rgba(249, 171, 83, 0.5);
+      color: black;
+    }
+
+    p.todo-text {
+      width: 50%;
+    }
+
+    p.todo-time {
+      width: 20%;
+      text-align: center;
+    }
+
+    button {
+      padding: 0.25rem 0.5rem;
+      font-size: 2.1rem;
+      border: none;
+      cursor: pointer;
+      color: white;
+    }
+
+    button.complete{
+      background-color: green;
+      opacity: 0.6;
+    }
+    button.trash{
+      background-color: red;
+      opacity: 0.6;
+    }
+  }
+}
+
+div.sort{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0rem;
+
+  button{
+    cursor: pointer;
+    background-color: rgba(158, 162, 71, 0.5);
+    color: rgb(4, 115, 47);
+    padding: 0.25rem 0.5rem;
+    font-size: 2.1rem;
+    border: none;
+  }
+}
+
+.done{
+  opacity: 0.5;
+}
+
+@keyframes scaleUp{
+  from{
+    transform: scale(0);
+  }
+  to{
+    transform: scale(1);
+  }
+}
+
+@keyframes scaleDown{
+  from{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(0);
+  }
+}

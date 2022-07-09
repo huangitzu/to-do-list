@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+i {
+  pointer-events: none; }
+
+body {
+  background: white; }
+
+header {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(249, 171, 83, 0.5); }
+  header h1 {
+    color: #037e05;
+    font-size: 3rem; }
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Chrome, Safari, Edge, Opera */
+  /* Firefox */ }
+  form button,
+  form input {
+    padding: 0.25rem 0.5rem;
+    font-size: 1.75rem;
+    margin: 0.1rem; }
+  form input[type="number"] {
+    width: auto;
+    text-align: center; }
+  form input::-webkit-inner-spin-button,
+  form input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0; }
+  form input[type=number] {
+    -moz-appearance: textfield; }
+  form button {
+    cursor: pointer;
+    background-color: rgba(158, 162, 71, 0.5);
+    color: #04732f; }
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  section div.todo {
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    margin: 0.2rem 0;
+    transition: all 0.1s ease; }
+    section div.todo p {
+      padding: 0.25rem 0.5rem;
+      font-size: 1.75rem;
+      background-color: rgba(249, 171, 83, 0.5);
+      color: black; }
+    section div.todo p.todo-text {
+      width: 50%; }
+    section div.todo p.todo-time {
+      width: 20%;
+      text-align: center; }
+    section div.todo button {
+      padding: 0.25rem 0.5rem;
+      font-size: 2.1rem;
+      border: none;
+      cursor: pointer;
+      color: white; }
+    section div.todo button.complete {
+      background-color: green;
+      opacity: 0.6; }
+    section div.todo button.trash {
+      background-color: red;
+      opacity: 0.6; }
+
+div.sort {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0rem; }
+  div.sort button {
+    cursor: pointer;
+    background-color: rgba(158, 162, 71, 0.5);
+    color: #04732f;
+    padding: 0.25rem 0.5rem;
+    font-size: 2.1rem;
+    border: none; }
+
+.done {
+  opacity: 0.5; }
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }
+@keyframes scaleDown {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(0); } }
+
+/*# sourceMappingURL=style.css.map */
